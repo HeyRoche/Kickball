@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Kickball</string>
+    <string name="kBTeamOne">Kicball Team One</string>
+    <string name="kBTeamTwo">Kicball Team Two</string>
+    <string name="zero">0</string>
+    <string name="oneRun">One Run</string>
+    <string name="twoRun">Two Runs</string>
+    <string name="threeRun">Three Runs </string>
+    <string name="fourRun">Four\n Runs </string>
+    <string name="teamOneOuts">Team One Outs</string>
+    <string name="teamTwoOuts">Team Two Outs</string>
+    <string name="addOut">Add Out</string>
+    <string name="resetOuts">Reset Outs</string>
+    <string name="reset">Reset Game</string>
+</resources>

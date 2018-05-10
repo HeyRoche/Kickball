@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kickball"
+        tools:ignore="contentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="@string/kBTeamOne"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/teamOneScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/zero"
+                android:textSize="56sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/teamOneBtnOne"
+                    style="@style/topBtns"
+                    android:onClick="oneRunTeamOne"
+                    android:text="@string/oneRun" />
+
+                <Button
+                    android:id="@+id/teamOneBtnTwo"
+                    style="@style/topBtns"
+                    android:layout_toEndOf="@id/teamOneBtnOne"
+                    android:layout_toRightOf="@id/teamOneBtnOne"
+                    android:onClick="twoRunsTeamOne"
+                    android:text="@string/twoRun" />
+
+                <Button
+                    android:id="@+id/teamOneBtnThree"
+                    style="@style/btmBtns"
+                    android:layout_below="@id/teamOneBtnOne"
+                    android:onClick="threeRunsTeamOne"
+                    android:text="@string/threeRun" />
+
+                <Button
+                    android:id="@+id/teamOneBtnFour"
+                    style="@style/btmBtns"
+                    android:layout_below="@id/teamOneBtnTwo"
+                    android:layout_toEndOf="@id/teamOneBtnThree"
+                    android:layout_toRightOf="@id/teamOneBtnThree"
+                    android:onClick="fourRunsTeamOne"
+                    android:text="@string/fourRun" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/teamOneOutsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/teamOneOuts"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/teamOneOuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/zero"
+                android:textColor="#FFF"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/addOutTeamOne"
+                style="@style/outBtns"
+                android:onClick="teamOneOuts"
+                android:text="@string/addOut" />
+
+            <Button
+                android:id="@+id/resetOneOuts"
+                style="@style/outBtns"
+                android:onClick="resetTeamOneOuts"
+                android:text="@string/resetOuts" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="@string/kBTeamTwo"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/teamTwoScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/zero"
+                android:textSize="56sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/teamTwoBtnOne"
+                    style="@style/topBtns"
+                    android:onClick="oneRunTeamTwo"
+                    android:text="@string/oneRun" />
+
+                <Button
+                    android:id="@+id/teamTwoBtnTwo"
+                    style="@style/topBtns"
+                    android:layout_toEndOf="@id/teamTwoBtnOne"
+                    android:layout_toRightOf="@id/teamTwoBtnOne"
+                    android:onClick="twoRunsTeamTwo"
+                    android:text="@string/twoRun" />
+
+                <Button
+                    android:id="@+id/teamTwoBtnThree"
+                    style="@style/btmBtns"
+                    android:layout_below="@id/teamTwoBtnOne"
+                    android:onClick="threeRunsTeamTwo"
+                    android:text="@string/threeRun" />
+
+                <Button
+                    android:id="@+id/teamTwoBtnFour"
+                    style="@style/btmBtns"
+                    android:layout_below="@id/teamTwoBtnTwo"
+                    android:layout_toEndOf="@id/teamTwoBtnThree"
+                    android:layout_toRightOf="@id/teamTwoBtnThree"
+                    android:onClick="fourRunsTeamTwo"
+                    android:text="@string/fourRun" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="24dp"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/teamTwoOutsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:text="@string/teamTwoOuts"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/teamTwoOuts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:text="@string/zero"
+                android:textColor="#FFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/addOutTeamTwo"
+                style="@style/outBtns"
+                android:onClick="teamTwoOuts"
+                android:text="@string/addOut" />
+
+            <Button
+                android:id="@+id/resetTwoOuts"
+                style="@style/outBtns"
+                android:onClick="resetTeamTwoOuts"
+                android:text="@string/resetOuts" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="resetGame"
+        android:text="@string/reset"
+        android:textColor="#FFF" />
+
+</RelativeLayout>
