@@ -83,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //These methods below reset the team outs when the appropriate button is clicked
+    //These methods below reset the team outs when the appropriate button is clicked.
     public void resetTeamOneOuts(View view) {
         outTeamOne = 0;
         teamOneOutDisplay(outTeamOne);
