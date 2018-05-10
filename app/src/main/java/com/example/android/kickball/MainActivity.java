@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     //The four methods below calculate runs scored.
     public void oneRunTeamOne(View View) {
-        scoreTeamOne = scoreTeamOne + 1;
+        scoreTeamOne = scoreTeamOne++;
         teamOneDisplay(scoreTeamOne);
     }
 
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     }
     //The four methods below calculate runs scored.
     public void oneRunTeamTwo(View View) {
-        scoreTeamTwo = scoreTeamTwo + 1;
+        scoreTeamTwo = scoreTeamTwo++;
         teamTwoDisplay(scoreTeamTwo);
     }
 
