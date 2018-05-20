@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         teamOneDisplay(scoreTeamOne);
     }
 
-    // Calculates the outs for team One.
+    // Calculates the outs for team One. The use of Toast in the app was learned from previous challenge course work.
     public void teamOneOuts(View view) {
         outTeamOne = outTeamOne + 1;
         if (outTeamOne > 3) {
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         teamTwoDisplay(scoreTeamTwo);
     }
 
-    //Calculates the outs for team Two.
+    //Calculates the outs for team Two.The use of Toast in the app was learned from previous challenge course work.
     public void teamTwoOuts(View view) {
         outTeamTwo = outTeamTwo + 1;
         if (outTeamTwo > 3) {
