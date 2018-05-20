@@ -15,7 +15,6 @@ public class MainActivity extends AppCompatActivity {
     int outTeamOne = 0;
     int outTeamTwo = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     //The four methods below calculate runs scored.
     public void oneRunTeamOne(View View) {
-        scoreTeamOne = scoreTeamOne++;
+        scoreTeamOne = scoreTeamOne + 1;
         teamOneDisplay(scoreTeamOne);
     }
 
@@ -43,18 +42,19 @@ public class MainActivity extends AppCompatActivity {
         teamOneDisplay(scoreTeamOne);
     }
 
-    // Outs aren't adding correctly.
+    // Calculates the outs for team One.
     public void teamOneOuts(View view) {
-        outTeamOne = outTeamOne++;
+        outTeamOne = outTeamOne + 1;
         if (outTeamOne > 3) {
             outTeamOne = 0;
-            Toast.makeText(this, "Can't have more than 3 outs", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.moreThan3Outs, Toast.LENGTH_SHORT).show();
         }
         teamOneOutDisplay(outTeamOne);
     }
+
     //The four methods below calculate runs scored.
     public void oneRunTeamTwo(View View) {
-        scoreTeamTwo = scoreTeamTwo++;
+        scoreTeamTwo = scoreTeamTwo + 1;
         teamTwoDisplay(scoreTeamTwo);
     }
 
@@ -72,16 +72,16 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamTwo = scoreTeamTwo + 2;
         teamTwoDisplay(scoreTeamTwo);
     }
-    //Issue with outs persist.
+
+    //Calculates the outs for team Two.
     public void teamTwoOuts(View view) {
-        outTeamTwo = outTeamTwo++;
+        outTeamTwo = outTeamTwo + 1;
         if (outTeamTwo > 3) {
             outTeamTwo = 0;
-            Toast.makeText(this, "Can't have more than 3 outs", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.moreThan3Outs, Toast.LENGTH_SHORT).show();
         }
         teamTwoOutDisplay(outTeamTwo);
     }
-
 
     //These methods below reset the team outs when the appropriate button is clicked.
     public void resetTeamOneOuts(View view) {
@@ -114,6 +114,7 @@ public class MainActivity extends AppCompatActivity {
         TextView teamTwoOuts = findViewById(R.id.teamTwoOuts);
         teamTwoOuts.setText(String.valueOf(outs));
     }
+
     //Method resets the scores and outs for both teams in order to reset the entire game.
     public void resetGame(View view) {
         scoreTeamOne = 0;
@@ -125,8 +126,6 @@ public class MainActivity extends AppCompatActivity {
         outTeamTwo = 0;
         teamTwoOutDisplay(outTeamTwo);
     }
-
-
 }
 
 

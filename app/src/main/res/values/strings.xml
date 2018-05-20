@@ -12,4 +12,5 @@
     <string name="addOut">Add Out</string>
     <string name="resetOuts">Reset Outs</string>
     <string name="reset">Reset Game</string>
+    <string name="moreThan3Outs">Can\' t have more than 3 outs!</string>
 </resources>

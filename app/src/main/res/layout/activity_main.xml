@@ -28,12 +28,12 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/mainTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp"
-                android:text="@string/kBTeamOne"
-                android:textSize="20sp" />
+                android:text="@string/kBTeamOne" />
 
             <TextView
                 android:id="@+id/teamOneScore"
@@ -89,25 +89,22 @@
 
             <TextView
                 android:id="@+id/teamOneOutsText"
+                style="@style/outsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:text="@string/teamOneOuts"
-                android:textColor="#FFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:text="@string/teamOneOuts" />
 
 
             <TextView
                 android:id="@+id/teamOneOuts"
+                style="@style/outsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="@string/zero"
-                android:textColor="#FFF"
-                android:textSize="24sp" />
+                android:text="@string/zero" />
 
             <Button
                 android:id="@+id/addOutTeamOne"
@@ -136,12 +133,12 @@
             android:orientation="vertical">
 
             <TextView
+                style="@style/mainTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="24dp"
-                android:text="@string/kBTeamTwo"
-                android:textSize="20sp" />
+                android:text="@string/kBTeamTwo" />
 
             <TextView
                 android:id="@+id/teamTwoScore"
@@ -197,26 +194,22 @@
 
             <TextView
                 android:id="@+id/teamTwoOutsText"
+                style="@style/outsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="16dp"
-                android:text="@string/teamTwoOuts"
-                android:textColor="#FFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:text="@string/teamTwoOuts" />
 
 
             <TextView
                 android:id="@+id/teamTwoOuts"
+                style="@style/outsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="@string/zero"
-                android:textColor="#FFF"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+                android:text="@string/zero" />
 
             <Button
                 android:id="@+id/addOutTeamTwo"
